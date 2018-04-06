@@ -33,7 +33,13 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
+  function randomStatus() {
+        let status = [`${bot.guilds.size} SERVERS!!`, `${bot.users.size.toLocaleString()} USERS!`, `UPDATE!`, `i!help | Beta v1.0`]
+        let rstatus = Math.floor(Math.random() * status.length);
+        bot.user.setActivity(status[rstatus], {type: 'WATCHING'});
+
+   }; setInterval(randomStatus, 15000)
+ 
 
 });
 
