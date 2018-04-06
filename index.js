@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
-const botsettings = require("./Storage/botsettings.json");
+const botsettings = require("./botconfig.json");
+const botconfig = require("./botconfig.json");
 const key = process.env.YOUTUBE_API_KEY;
 const fs = require("fs");
 const colors = require('colors');
