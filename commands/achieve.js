@@ -30,6 +30,6 @@ message.channel.send(image)
 exports.help = {
     name: "achieve",
     description: "Get an achievement from minecraft",
-    usage: "pr!achieve <name>",
+    usage: "i!achieve <name>",
     note: "Image may get long!"
 };
