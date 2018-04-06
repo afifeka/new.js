@@ -1,4 +1,4 @@
-const botsettings = require("../Storage/botsettings.json");
+const botsettings = require("./botsettings.json");
 const Discord = require('discord.js');
 const key = process.env.YOUTUBE_API_KEY
 const fs = require("fs");
