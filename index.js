@@ -10,8 +10,8 @@ const Youtube = require("simple-youtube-api");
 const youtube = new Youtube(key);
 const queue = new Map();
 const snekfetch = require("snekfetch");
-const prefixes = require("./Storage/prefixes.json")
-const economy = require("./Storage/economy.json");
+const prefixes = require("./prefixes.json")
+const economy = require("./economy.json");
 const db = require('quick.db');
 const figlet = require('figlet');
 bot.commands = new Discord.Collection();
@@ -57,4 +57,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(tokenfile.token);
+bot.login(process.env.BOT_TOKEN);
